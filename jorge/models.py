@@ -11,4 +11,10 @@ class Refresco(models.Model):
     def __str__(self):
         return f"{self.nombre}-{self.marca}-{self.fecha_creado}"
     
+class Cereales(models.Model):
+    nombreC=models.CharField(max_length=20)
+    presentacion=models.CharField(max_length=20)
+    gramos=models.CharField(max_length=20)
     
+    def __str__(self):
+        return f"{self.nombreC}-{self.presentacion}-{self.fgramos}"
